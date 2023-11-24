@@ -22,11 +22,11 @@ for index,i in enumerate(results):
    subject=".."
    message=i+".."
    content="subject: {0} {1}".format(subject,message)
-   sender="tunabozkir@gmail.com"
+   sender="tunabozki..@gmail.com"
    mail=SMTP("smtp.gmail.com",587) 
    mail.ehlo() #connecting server
    mail.starttls() #crypto
-   mail.login("tunabozkir@gmail.com","password")
+   mail.login("tunabozki..@gmail.com","password")
    mail.sendmail(sender,sender ,content.encode("utf-8"))
    time.sleep(60)
    
