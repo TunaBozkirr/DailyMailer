@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup  # For data processing
 import requests  # For data fetching
 
 # Fetch the content from the website
-url = "https://www.southernliving.com/holidays-occasions/birthday/happy-birthday-wishes"
+url = "https://parade.com/1219454/marynliles/cute-things-to-say-to-your-girlfriend/"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, "lxml", from_encoding='UTF-8')
 
@@ -30,7 +30,7 @@ smtp_port = 587
 smtp_username = "tunabozki..@gmail.com"
 smtp_password = "password"
 
-# Loop through the birthday wishes and send them via email
+# Loop through the nice words and send them via email
 for index, message in enumerate(results):
     # Prepare the email content
     email_content = f"Subject: {subject}\n\n{message}.."
